@@ -90,6 +90,13 @@ Here’s a step-by-step example of the first few turns, showing typical player c
 Turn 1
 Initial State:
 
+text
+
+Collapse
+
+Wrap
+
+Copy
 Welcome to Energy Grid Command!
 You are the Captain of the Energy Star Ship Enterprise.
 Your mission: Manage the European energy grid for 20 years (80 turns).
@@ -111,26 +118,82 @@ Quadrant C: Residential Grid
   C3: Inverters: 0 units (0 MW), Req: 10.0 MW, Unstable
   C4: Inverters: 0 units (0 MW), Req: 10.0 MW, Unstable
 
-Player Input:
 Enter command:
-DEPLOY BESS A1 3
 Player Input:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
 DEPLOY BESS A1 3
+Response:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
 Deployed 3 BESS to A1. Cost: 0.045 billion EUR.
 Enter command:
 Player Input:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
 DEPLOY INVERTER C1 2
+Response:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
 Deployed 2 Inverters to C1. Cost: 0.01 billion EUR.
 Enter command:
+Player Input:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
 END
 Game Response:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
 Processing turn...
 Blackout in A2! Cost: 1 billion EUR.
 Blackout in B1! Cost: 1 billion EUR.
 Total blackout cost this turn: 2 billion EUR.
-
 Turn 2
 Updated State:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
 Turn: 2, Budget: 297.945 billion EUR, Blackouts: 2
 Quadrant A: High Renewable Penetration
   A1: BESS: 3 units (30 MW), Req: 21.0 MW, Stable
@@ -152,18 +215,58 @@ Event: Increased requirement in A3!
 
 Enter command:
 Player Input:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
 DEPLOY BESS A3 4
+Response:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
 Deployed 4 BESS to A3. Cost: 0.06 billion EUR.
 Enter command:
 Player Input:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
 END
 Game Response:
+
+text
+
+Collapse
+
+Wrap
+
+Copy
 Processing turn...
 No blackouts this turn.
 Turn 3
 Updated State:
-Turn: 3, Budget: 297.885 billion EUR, Blackouts: 2
 
+text
+
+Collapse
+
+Wrap
+
+Copy
+Turn: 3, Budget: 297.885 billion EUR, Blackouts: 2
 Quadrant A: High Renewable Penetration
   A1: BESS: 3 units (30 MW), Req: 22.0 MW, Stable
   A2: BESS: 0 units (0 MW), Req: 22.0 MW, Unstable
@@ -177,12 +280,18 @@ Quadrant C: Residential Grid
   ...
 
 Enter command:
-
 This example demonstrates deploying resources, handling blackouts, and responding to a random event, giving players a clear sense of the game’s flow.
 
 Typical ASCII Terminal Output
 Here’s a sample of the game’s terminal output, including color-coded stability indicators (green for stable, red for unstable in a real terminal):
 
+text
+
+Collapse
+
+Wrap
+
+Copy
 Welcome to Energy Grid Command!
 You are the Captain of the Energy Star Ship Enterprise.
 Your mission: Manage the European energy grid for 20 years (80 turns).
@@ -218,7 +327,6 @@ Total blackout cost this turn: 2 billion EUR.
 
 Turn: 2, Budget: 297.945 billion EUR, Blackouts: 2
 ...
-
 Customization and Learning Opportunities
 Students can enhance the game by:
 
