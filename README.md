@@ -1,6 +1,3 @@
-# Star-Trek-Energy-Game
-Based on the Star Trek 1971 Unix Game running entirely from a Rasberry Pico Pi in Windows Terminal
-
 Energy Grid Command - A MicroPython Game for Raspberry Pi Pico
 Overview
 Energy Grid Command is an educational text-based simulation game designed for students learning programming on the Raspberry Pi Pico. Inspired by the classic 1971 Star Trek game, this project reimagines the challenge of managing the European energy grid. Players assume the role of the Captain of the Energy Star Ship Enterprise, tasked with transforming an aging grid to cope with surging renewable energy, skyrocketing industrial demand, and the rise of electric vehicles (EVs). The game runs entirely on the Pico and interacts with a Windows terminal via USB HID, offering an engaging way to explore programming concepts.
@@ -93,13 +90,6 @@ Here’s a step-by-step example of the first few turns, showing typical player c
 Turn 1
 Initial State:
 
-text
-
-Collapse
-
-Wrap
-
-Copy
 Welcome to Energy Grid Command!
 You are the Captain of the Energy Star Ship Enterprise.
 Your mission: Manage the European energy grid for 20 years (80 turns).
@@ -121,82 +111,26 @@ Quadrant C: Residential Grid
   C3: Inverters: 0 units (0 MW), Req: 10.0 MW, Unstable
   C4: Inverters: 0 units (0 MW), Req: 10.0 MW, Unstable
 
-Enter command:
 Player Input:
-
-text
-
-Collapse
-
-Wrap
-
-Copy
+Enter command:
 DEPLOY BESS A1 3
-Response:
-
-text
-
-Collapse
-
-Wrap
-
-Copy
+Player Input:
+DEPLOY BESS A1 3
 Deployed 3 BESS to A1. Cost: 0.045 billion EUR.
 Enter command:
 Player Input:
-
-text
-
-Collapse
-
-Wrap
-
-Copy
 DEPLOY INVERTER C1 2
-Response:
-
-text
-
-Collapse
-
-Wrap
-
-Copy
 Deployed 2 Inverters to C1. Cost: 0.01 billion EUR.
 Enter command:
-Player Input:
-
-text
-
-Collapse
-
-Wrap
-
-Copy
 END
 Game Response:
-
-text
-
-Collapse
-
-Wrap
-
-Copy
 Processing turn...
 Blackout in A2! Cost: 1 billion EUR.
 Blackout in B1! Cost: 1 billion EUR.
 Total blackout cost this turn: 2 billion EUR.
+
 Turn 2
 Updated State:
-
-text
-
-Collapse
-
-Wrap
-
-Copy
 Turn: 2, Budget: 297.945 billion EUR, Blackouts: 2
 Quadrant A: High Renewable Penetration
   A1: BESS: 3 units (30 MW), Req: 21.0 MW, Stable
@@ -218,58 +152,18 @@ Event: Increased requirement in A3!
 
 Enter command:
 Player Input:
-
-text
-
-Collapse
-
-Wrap
-
-Copy
 DEPLOY BESS A3 4
-Response:
-
-text
-
-Collapse
-
-Wrap
-
-Copy
 Deployed 4 BESS to A3. Cost: 0.06 billion EUR.
 Enter command:
 Player Input:
-
-text
-
-Collapse
-
-Wrap
-
-Copy
 END
 Game Response:
-
-text
-
-Collapse
-
-Wrap
-
-Copy
 Processing turn...
 No blackouts this turn.
 Turn 3
 Updated State:
-
-text
-
-Collapse
-
-Wrap
-
-Copy
 Turn: 3, Budget: 297.885 billion EUR, Blackouts: 2
+
 Quadrant A: High Renewable Penetration
   A1: BESS: 3 units (30 MW), Req: 22.0 MW, Stable
   A2: BESS: 0 units (0 MW), Req: 22.0 MW, Unstable
@@ -283,18 +177,12 @@ Quadrant C: Residential Grid
   ...
 
 Enter command:
+
 This example demonstrates deploying resources, handling blackouts, and responding to a random event, giving players a clear sense of the game’s flow.
 
 Typical ASCII Terminal Output
 Here’s a sample of the game’s terminal output, including color-coded stability indicators (green for stable, red for unstable in a real terminal):
 
-text
-
-Collapse
-
-Wrap
-
-Copy
 Welcome to Energy Grid Command!
 You are the Captain of the Energy Star Ship Enterprise.
 Your mission: Manage the European energy grid for 20 years (80 turns).
@@ -330,6 +218,7 @@ Total blackout cost this turn: 2 billion EUR.
 
 Turn: 2, Budget: 297.945 billion EUR, Blackouts: 2
 ...
+
 Customization and Learning Opportunities
 Students can enhance the game by:
 
@@ -341,11 +230,3 @@ Learning Outcomes
 Programming Skills: Loops, conditionals, dictionaries, and functions.
 Microcontroller Use: Running code on the Pico and interfacing with a PC.
 Game Design: Managing game loops, randomness, and player interaction.
-Feedback and Support
-We’d love to hear how the game works in your classroom! Share feedback, student modifications, or ideas for improvements.
-
-GitHub Repository: [Insert your school lab GitHub repo link here]
-
-Contact: [Insert your contact information here]
-
-Enjoy commanding the energy grid, Captain!
