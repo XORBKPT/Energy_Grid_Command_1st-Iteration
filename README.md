@@ -1,28 +1,21 @@
-Below is an extensive README for the **Energy Grid Command** game, tailored for your school lab GitHub repository. It includes an overview, setup instructions, gameplay mechanics, a detailed example of play, typical ASCII terminal output, and guidance on how students can interact with the game using Thonny’s serial console. This README is designed to be clear and accessible for both students and teachers, ensuring they can easily playtest and enjoy the game.
-
+**Energy Grid Command** game, tailored for your school lab GitHub repository. It includes an overview, setup instructions, gameplay mechanics, a detailed example of play, typical ASCII terminal output like the very first ever 1971 Star Trek Unix game, guidance on how students can interact with the game using Thonny’s serial console. Fork the code, the energy model and save the grid, Captain!
 ---
-
 # Energy Grid Command - A MicroPython Game for Raspberry Pi Pico
-
 ## Overview
-**Energy Grid Command** is an educational text-based simulation game designed for students learning programming on the Raspberry Pi Pico. Inspired by the classic 1971 *Star Trek* game, this project reimagines the challenge of managing the European energy grid. Players assume the role of the Captain of the Energy Star Ship Enterprise, tasked with transforming an aging grid to cope with surging renewable energy, skyrocketing industrial demand, and the rise of electric vehicles (EVs). The game runs entirely on the Pico and interacts with a Windows terminal via USB HID, offering an engaging way to explore programming concepts.
+**Energy Grid Command** is an educational text-based simulation game designed for students learning programming on the Raspberry Pi Pico. Inspired by the classic 1971 *Star Trek* game, this project reimagines the challenge of managing the European energy grid. Players assume the role of the Captain of the Energy Star Ship Enterprise, tasked with transforming an aging grid to cope with surging renewable energy, skyrocketing industrial demand, and the rise of electric vehicles (EVs). The game runs entirely on the Pico and interacts with a Windows terminal via USB HID, offering an engaging way to explore programming concepts, you might want to add other factors like reverse flow from solar and wind, skilled workforce at their limits trying to cope with the energy physics while new unfamiliar equipement like storage, inverters and power conditioners are needed to keep the grid stable. And Cyber risk with connecting all these things togther! (the Klingons..). The grid is in your hands Captain!
 
 ### Key Features
 - **Educational Focus**: Teaches programming fundamentals such as loops, conditionals, dictionaries, and user input handling.
 - **Real-World Inspiration**: Reflects realistic energy grid challenges, simplified for gameplay.
 - **Interactive Gameplay**: Players deploy resources, respond to random events, and maintain grid stability over 80 turns.
 - **Visual Feedback**: Features ASCII art and color-coded stability indicators in the terminal.
-
 ---
-
 ## Setup Instructions
 To run **Energy Grid Command** on a Raspberry Pi Pico, follow these steps:
-
 ### Requirements
 - Raspberry Pi Pico with MicroPython installed.
 - Thonny IDE (or another MicroPython-compatible IDE).
 - A Windows PC with a USB port.
-
 ### Installation
 1. **Install MicroPython on the Pico**:
    - Download the MicroPython UF2 file from the [official Raspberry Pi documentation](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html).
@@ -44,7 +37,6 @@ To run **Energy Grid Command** on a Raspberry Pi Pico, follow these steps:
    - The game will launch in the Thonny serial console, displaying a welcome message and the initial grid state.
 
 ---
-
 ## Gameplay Mechanics
 As the Captain, your mission is to manage the energy grid across three quadrants over 80 turns (representing 20 years). Each quadrant contains four sectors, and you must deploy resources to keep them stable amidst growing demand and random events.
 
@@ -119,7 +111,7 @@ As the Captain, your mission is to manage the energy grid across three quadrants
 ---
 
 ## Detailed Example of Play
-Here’s a step-by-step example of the first few turns, showing typical player commands and their effects, along with game responses.
+Example of the first few turns, showing typical player commands and their effects, along with game responses:
 
 ### Turn 1
 **Initial State:**
@@ -145,51 +137,37 @@ Quadrant C: Residential Grid
   C2: Inverters: 0 units (0 MW), Req: 10.0 MW, Unstable
   C3: Inverters: 0 units (0 MW), Req: 10.0 MW, Unstable
   C4: Inverters: 0 units (0 MW), Req: 10.0 MW, Unstable
-
 Enter command:
 ```
-
 **Player Input:**
-
 ```
 DEPLOY BESS A1 3
 ```
-
 **Response:**
-
 ```
 Deployed 3 BESS to A1. Cost: 0.045 billion EUR.
 Enter command:
 ```
-
 **Player Input:**
-
 ```
 DEPLOY INVERTER C1 2
 ```
-
 **Response:**
-
 ```
 Deployed 2 Inverters to C1. Cost: 0.01 billion EUR.
 Enter command:
 ```
-
 **Player Input:**
-
 ```
 END
 ```
-
 **Game Response:**
-
 ```
 Processing turn...
 Blackout in A2! Cost: 1 billion EUR.
 Blackout in B1! Cost: 1 billion EUR.
 Total blackout cost this turn: 2 billion EUR.
 ```
-
 ### Turn 2
 **Updated State:**
 
@@ -212,36 +190,27 @@ Quadrant C: Residential Grid
   C4: Inverters: 0 units (0 MW), Req: 10.2 MW, Unstable
 Event: Increased requirement in A3!
   A3: BESS: 0 units (0 MW), Req: 31.5 MW, Unstable (Event!)
-
 Enter command:
 ```
-
 **Player Input:**
-
 ```
 DEPLOY BESS A3 4
 ```
-
 **Response:**
-
 ```
 Deployed 4 BESS to A3. Cost: 0.06 billion EUR.
 Enter command:
 ```
-
 **Player Input:**
 
 ```
 END
 ```
-
 **Game Response:**
-
 ```
 Processing turn...
 No blackouts this turn.
 ```
-
 ### Turn 3
 **Updated State:**
 
@@ -326,17 +295,9 @@ Students can enhance the game by:
 - **Game Design**: Managing game loops, randomness, and player interaction.
 
 ---
-
-## Feedback and Support
-We’d love to hear how the game works in your classroom! Share feedback, student modifications, or ideas for improvements.
-
-- **GitHub Repository**: [Insert your school lab GitHub repo link here]
-- **Contact**: [Insert your contact information here]
-
 ---
-
 ## How Students Start the Serial Console
-The easiest and most recommended way for students to interact with the game is through **Thonny’s serial console**. Here’s how:
+The easiest way for students to interact with the game is through **Thonny’s serial console**. Here’s how:
 
 1. **Set Up Thonny**:
    - Ensure Thonny is installed on the school PCs (download from [thonny.org](https://thonny.org)).
@@ -357,7 +318,7 @@ The easiest and most recommended way for students to interact with the game is t
 While it’s technically possible to use the Windows terminal (e.g., Command Prompt) for interaction, it’s not recommended for students due to added complexity:
 - **Manual Setup**: Students would need to configure the serial port or install third-party tools like PuTTY.
 - **Challenges**: School PCs may have restrictions on software installation or terminal access.
-- **Recommendation**: Stick with Thonny’s serial console for a seamless, educational experience.
+- **Recommendation**:  Impute energy physics (power math) and economics/time (NPV / Calculus) to make it more accurate. Consider latency of turns - buying stuff, backorders from other grids trying to do the same thing in the same timeframe with the same limited suppliers; delivery, where to keep the inventory and cost of that vs cashflow now in your company versus the long term payback of a regulated asset base and workforce to scale it (few qualified engineers to go into high voltage areas, few electronics engineers to work with the equipment and until they do, any AI or platforms using the data go hungry. This is first iteration is just text based and runs without libraries. For more realism it could be run on a Pi Zero with HDMI graphics (in R or Matplotlib) as readouts screens for Spock and Scotty. Pi Zero's can easily be linked over MicroCloud Redis (e.g. AWS t2.nano) which can update all Pi Zeros in near real time but won't store or do the math - do that on the Pi's locally. A decentral game with 20 Pi Zeros can then be run for about $15 a month on on MicroCloud with no need for MQTT, SQL, costly data processing in the cloud. Enjoy <80).
 
 ---
 
