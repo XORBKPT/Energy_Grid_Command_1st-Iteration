@@ -1,5 +1,5 @@
 **Energy Grid Command for InnoEnergy Students UTUM**
-It includes an overview, setup instructions, gameplay mechanics, an example of play, typical ASCII terminal output. Inspried by the iconic very first ever 1971 Star Trek Unix game.
+It includes an overview, setup instructions, gameplay mechanics, an example of play, typical ASCII terminal output. Inspried the iconic 1971 Star Trek Unix game sysadmins played on night shift in the 1980's. It was the first game, ever.
 Clone or Fork the code and save the grid, Captain!
 ---
 # Energy Grid Command - A MicroPython Game for Raspberry Pi Pico
